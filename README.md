@@ -97,6 +97,9 @@ the documented v3 contract below.
 - `OgImageCacheBuster::build(string $schedule, ?DateTimeInterface $now = null): string`
 - `MosaicoraOgJsonLd::build(MosaicoraOgJsonLdOptions $options): array`
 - `MosaicoraOgJsonLd::serialize(array $value): string`
+- `MosaicoraOgSemanticRoles::definitions(): array`
+- `MosaicoraOgSemanticRoles::typeFor(string $role): ?string`
+- `MosaicoraOgSemanticRoles::acceptsValue(string $role, mixed $value): bool`
 - Immutable value objects: `OgImageUrlOptions`, `MosaicoraOgJsonLdOptions`,
   `MosaicoraOgOverride`, and `MosaicoraOgMetric`.
 
